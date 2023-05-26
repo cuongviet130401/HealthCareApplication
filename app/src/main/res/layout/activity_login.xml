@@ -11,7 +11,7 @@
         android:id="@+id/editTextLoginUsername"
         android:layout_width="282dp"
         android:layout_height="46dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/icons8_account_30"
         android:drawablePadding="10dp"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Health Plus"
-        android:textColor="#00BCD4"
+        android:textColor="@color/colorRed"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textColor="#EDF0F1"
+        android:textColor="@color/colorBlack"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +58,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.021" />
 
     <EditText
         android:id="@+id/editTextLoginPassword"

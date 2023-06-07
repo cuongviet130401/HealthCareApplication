@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/editTextAppAddress"
+        android:id="@+id/editTextLTBAddress"
         android:layout_width="282dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
@@ -29,10 +29,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullName" />
 
     <EditText
-        android:id="@+id/editTextAppFees"
+        android:id="@+id/editTextLTBContact"
         android:layout_width="282dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
@@ -52,10 +52,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPincode" />
 
     <EditText
-        android:id="@+id/editTextAppFullName"
+        android:id="@+id/editTextLTBFullName"
         android:layout_width="282dp"
         android:layout_height="46dp"
         android:layout_marginTop="12dp"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/editTextAppContactNumber"
+        android:id="@+id/editTextLTBPincode"
         android:layout_width="282dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
@@ -127,10 +127,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress" />
 
     <Button
-        android:id="@+id/buttonAppBack"
+        android:id="@+id/buttonLTBBooking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -139,7 +139,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBContact" />
 
     <TextView
         android:id="@+id/textViewExistingUser"
@@ -150,6 +150,6 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAppBack" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLTBBooking" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

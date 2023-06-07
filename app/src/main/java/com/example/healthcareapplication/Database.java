@@ -83,4 +83,3 @@ public class Database extends SQLiteOpenHelper {
         db.close();
     }
 }
-

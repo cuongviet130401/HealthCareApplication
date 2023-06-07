@@ -23,11 +23,11 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test_details);
 
-        tvPackageName = findViewById(R.id.textViewLDPackageName);
-        tvTotalCost = findViewById(R.id.textViewLDTotalCost);
+        tvPackageName = findViewById(R.id.textViewCartPackageName);
+        tvTotalCost = findViewById(R.id.textViewCartTotalCost);
         edDetails = findViewById(R.id.editTextLDTextMultiline);
-        btnAddToCart = findViewById(R.id.buttonLDAddToCart);
-        btnBack = findViewById(R.id.buttonLDBack);
+        btnAddToCart = findViewById(R.id.buttonCartCheckout);
+        btnBack = findViewById(R.id.buttonCartBack);
 
         edDetails.setKeyListener(null);
 

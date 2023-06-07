@@ -8,7 +8,7 @@
     tools:context=".BookAppointmentActivity">
 
     <Button
-        android:id="@+id/buttonAppTime"
+        android:id="@+id/buttonCartTimePicker"
         style="?android:spinnerStyle"
         android:layout_width="86dp"
         android:layout_height="39dp"
@@ -188,7 +188,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <Button
-        android:id="@+id/buttonAppDate"
+        android:id="@+id/buttonCartDatePicker"
         style="?android:spinnerStyle"
         android:layout_width="116dp"
         android:layout_height="41dp"

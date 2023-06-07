@@ -19,7 +19,7 @@ public class FindDoctorActivity extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(FindDoctorActivity.this,LoginActivity.class));
+                startActivity(new Intent(FindDoctorActivity.this,HomeActivity.class));
             }
         });
 

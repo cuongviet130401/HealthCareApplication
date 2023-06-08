@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <TextView
-        android:id="@+id/textViewDDTitle"
+        android:id="@+id/textViewODTitle"
         android:layout_width="157dp"
         android:layout_height="24dp"
         android:text="Deliver Location"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ListView
-        android:id="@+id/listViewCart"
+        android:id="@+id/listViewDD"
         android:layout_width="350dp"
         android:layout_height="500dp"
         android:layout_margin="10dp"
@@ -62,10 +62,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle" />
 
     <Button
-        android:id="@+id/buttonCartBack"
+        android:id="@+id/buttonODBack"
         android:layout_width="122dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"

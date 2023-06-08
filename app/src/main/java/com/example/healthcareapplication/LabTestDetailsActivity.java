@@ -27,7 +27,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         tvTotalCost = findViewById(R.id.textViewCartTotalCost);
         edDetails = findViewById(R.id.editTextLDTextMultiline);
         btnAddToCart = findViewById(R.id.buttonCartCheckout);
-        btnBack = findViewById(R.id.buttonCartBack);
+        btnBack = findViewById(R.id.buttonODBack);
 
         edDetails.setKeyListener(null);
 

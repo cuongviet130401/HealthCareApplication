@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <TextView
-        android:id="@+id/textViewDDTitle"
+        android:id="@+id/textViewODTitle"
         android:layout_width="157dp"
         android:layout_height="24dp"
         android:text="Deliver Location"
@@ -53,7 +53,7 @@
 
 
     <Button
-        android:id="@+id/buttonCartBack"
+        android:id="@+id/buttonODBack"
         android:layout_width="122dp"
         android:layout_height="50dp"
         android:layout_marginTop="94dp"

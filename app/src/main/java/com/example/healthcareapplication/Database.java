@@ -23,7 +23,7 @@ public class Database extends SQLiteOpenHelper {
         String qry2 = "create table cart(username text, product text, price float, otype text)";
         sqLiteDatabase.execSQL(qry2);
 
-        String qry3 = "create table orderplace(username text, fullname text, addredd text, contact text, pincode int,date text, time text, amount float, otype text)";
+        String qry3 = "create table orderplace(username text, fullname text, address text, contactno text, pincode int,date text, time text, amount float, otype text)";
         sqLiteDatabase.execSQL(qry3);
     }
 
@@ -111,7 +111,7 @@ public class Database extends SQLiteOpenHelper {
         cv.put("username", username);
         cv.put("fullname", fullname);
         cv.put("address", address);
-        cv.put("contact", contact);
+        cv.put("contactno", contact);
         cv.put("pincode", pincode);
         cv.put("date", date);
         cv.put("time", time);
@@ -125,12 +125,12 @@ public class Database extends SQLiteOpenHelper {
     public ArrayList getOrderData(String username){
         ArrayList<String> arr = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
-        String str[]= new String[2];
+        String str[]= new String[1];
         str[0]= username;
-        Cursor c = db.rawQuery("select * from orderplace where username = ? and otype = ?",str);
+        Cursor c = db.rawQuery("select * from orderplace where username = ?",str);
         if (c.moveToFirst()) {
             do{
-                arr.add(c.getString(1)+"$"+c.getString(2)+"$"+c.getString(3)+"$"+c.getString(4)+"$"+c.getString(5)+"$");
+                arr.add(c.getString(1)+"$"+c.getString(2)+"$"+c.getString(3)+"$"+c.getString(4)+"$"+c.getString(5)+"$"+c.getString(6)+"$"+c.getString(7)+"$"+c.getString(8));
             }while(c.moveToNext());
         }
         db.close();

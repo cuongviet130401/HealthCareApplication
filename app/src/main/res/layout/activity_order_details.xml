@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
-    tools:context=".DoctorDetailsActivity">
+    tools:context=".OrderDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewDDName"
+        android:id="@+id/textViewODName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HEALTHCARE"
@@ -23,40 +23,39 @@
         />
 
     <TextView
-        android:id="@+id/textViewDDTitle"
+        android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Default Text"
-        android:textColor="@color/colorRed"
+        android:text="ORDER DETAILS"
+        android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDName"
-        app:layout_constraintVertical_bias="0.0199998"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textViewODName"
+        app:layout_constraintVertical_bias="0.0199998" />
 
     <ListView
-        android:id="@+id/listViewDD"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:id="@+id/listViewOD"
+        android:layout_width="369dp"
+        android:layout_height="466dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDDTitle"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle"
+        app:layout_constraintVertical_bias="0.038" />
 
     <Button
         android:id="@+id/buttonODBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="68dp"
         android:text="BACK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

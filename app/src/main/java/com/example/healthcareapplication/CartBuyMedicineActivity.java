@@ -49,8 +49,8 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
 
         //totalCost
         float totalAmount = 0;
-        ArrayList dbData = db.getCartData(username,"lab");
-        Toast.makeText(getApplicationContext(),""+dbData,Toast.LENGTH_SHORT).show();
+        ArrayList dbData = db.getCartData(username,"medicine");
+        //Toast.makeText(getApplicationContext(),""+dbData,Toast.LENGTH_SHORT).show();
 
         packages = new String[dbData.size()][];
         for(int i=0;i<packages.length;i++){
@@ -95,10 +95,10 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
         btnCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent it = new Intent(CartBuyMedicineActivity.this,BuyMedicineBookActivity.class);
-                //it.putExtra("price", tvTotal.getText());
-                //it.putExtra("date", dateButton.getText());
-                //startActivity(it);
+                Intent it = new Intent(CartBuyMedicineActivity.this,BuyMedicineBookActivity.class);
+                it.putExtra("price", tvTotal.getText());
+                it.putExtra("date", dateButton.getText());
+                startActivity(it);
             }
         });
 

@@ -67,7 +67,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_details);
 
-        tv = findViewById(R.id.textViewODTitle);
+        tv = findViewById(R.id.textViewDDTitle);
         btn = findViewById(R.id.buttonODBack);
 
         Intent it = getIntent();
@@ -88,6 +88,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         else
             doctor_details = doctor_details5;
 
+        //btnback
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

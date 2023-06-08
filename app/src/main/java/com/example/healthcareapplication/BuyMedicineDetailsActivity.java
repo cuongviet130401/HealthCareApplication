@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LabTestDetailsActivity extends AppCompatActivity {
+public class BuyMedicineDetailsActivity extends AppCompatActivity {
 
     TextView tvPackageName, tvTotalCost;
     EditText edDetails;
@@ -21,15 +21,13 @@ public class LabTestDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab_test_details);
+        setContentView(R.layout.activity_buy_medicine_details);
 
-        tvPackageName = findViewById(R.id.textViewBMTitle);
-        tvTotalCost = findViewById(R.id.textViewCartTotalCost);
-        edDetails = findViewById(R.id.editTextLDTextMultiline);
-        btnAddToCart = findViewById(R.id.buttonCartCheckout);
-        btnBack = findViewById(R.id.buttonODBack);
-
-        edDetails.setKeyListener(null);
+        tvPackageName = findViewById(R.id.textViewBMDPackageNme);
+        tvTotalCost = findViewById(R.id.textViewBMDTotalCost);
+        edDetails = findViewById(R.id.editTextBMDTextMultiline);
+        btnAddToCart = findViewById(R.id.buttonBMDAddToCart);
+        btnBack = findViewById(R.id.buttonBMDBack);
 
         Intent intent =getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
@@ -39,7 +37,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LabTestDetailsActivity.this,LabTestActivity.class));
+                startActivity(new Intent(BuyMedicineDetailsActivity.this,BuyMedicineActivity.class));
             }
         });
 
@@ -56,11 +54,14 @@ public class LabTestDetailsActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Product Already Added", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    db.addCart(username,product,price,"lab");
+                    db.addCart(username,product,price,"medicine");
                     Toast.makeText(getApplicationContext(), "Record Inserted to Card", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LabTestDetailsActivity.this,LabTestActivity.class));
+                    startActivity(new Intent(BuyMedicineDetailsActivity.this,BuyMedicineActivity.class));
                 }
             }
         });
+
+
     }
+
 }
